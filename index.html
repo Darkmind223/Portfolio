@@ -3,26 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seydina Oumar Keita - Terminal</title>
+    <title>Portfolio de Seydina Oumar Keita</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <div class="terminal-window">
-        <div class="terminal-header">
-            <div class="buttons">
-                <span class="btn close"></span>
-                <span class="btn min"></span>
-                <span class="btn max"></span>
+
+    <header>
+        <nav>
+            <div class="logo">SOK</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Accueil</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#tools">Outils</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-            <div class="title">C:\Users\Seydina> seydina.exe</div>
-        </div>
-        <div id="terminal-body" class="terminal-body">
-            <!-- Le contenu sera généré par script.js -->
-        </div>
-    </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-text">
+                <h1>Seydina Oumar Keita</h1>
+                <p>
+                    <span class="typed-text"></span>
+                    <span class="cursor">&nbsp;</span>
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="content-section">
+            <h2><i class="fas fa-laptop-code"></i> Compétences techniques</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Programmation & Bas-Niveau</h3>
+                    <ul>
+                        <li><strong>Assembleur x86_64 :</strong> registres, pile, sauts, appels système (GDB).</li>
+                        <li><strong>C / C++ :</strong> pointeurs, structures, listes chaînées, allocation dynamique.</li>
+                        <li><strong>Python :</strong> automatisation, Scapy (Ethernet/ARP/TCP), Tkinter.</li>
+                        <li><strong>HTML / CSS / JavaScript :</strong> notions pour front-end/tests web.</li>
+                        <li><strong>Bash :</strong> scripts, fonctions, rsync, cron (ex : PwnSync).</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Réseaux & Sécurité</h3>
+                    <ul>
+                        <li><strong>Équipements :</strong> MikroTik, Cisco, Ubiquiti (Hotspot, RADIUS, VPN WireGuard).</li>
+                        <li><strong>Liaisons PtP (M2/M5) :</strong> alignement, link-budget, PoE (24V/48V).</li>
+                        <li><strong>Analyse/Attaque :</strong> Nmap, Wireshark, tcpdump, ARP spoofing, MITM.</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Cryptographie & CTF</h3>
+                    <ul>
+                        <li><strong>Concepts :</strong> XOR, Base64, ROT13, Vigenère, hachages (MD5/SHA256).</li>
+                        <li><strong>Plateformes :</strong> TryHackMe, Hack The Box, Pwn College.</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Électronique, Robotique & Actionneurs</h3>
+                    <ul>
+                        <li><strong>Arduino / Wokwi :</strong> capteurs, LCD, boutons.</li>
+                        <li><strong>Servomoteurs & Moteurs :</strong> pilotage PWM, drivers, contrôle d'angles.</li>
+                        <li><strong>Actionneurs :</strong> relais, MOSFET, transistors pour commande.</li>
+                        <li><strong>Logique temps réel :</strong> temporisation, lecture capteurs, contrôle asservi.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="content-section">
+            <h2><i class="fas fa-tasks"></i> Projets majeurs</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>PwnSync</h3>
+                    <p>Script Bash (rsync) pour synchronisation serveur↔local, avec démon et manpage.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Bootcamps Cybersécurité</h3>
+                    <p>Participation active sur des sujets variés : Linux, réseaux, crypto, web, assembleur.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Liaisons PtP</h3>
+                    <p>Déploiement d'antennes, tests RSSI/SNR, et configuration d'alimentation PoE.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Portail Captif MikroTik</h3>
+                    <p>Mise en place d'un Hotspot avec walled-garden et intégration d'une API externe.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Projets Arduino / Robotique</h3>
+                    <p>Feu de signalisation, chapelet électronique (LCD+bouton), pilotage de servomoteurs.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Équipe Nationale de Robotique (Mali)</h3>
+                    <p>Participation à deux compétitions internationales (First Global 2017 : Sénégal & USA).</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tools" class="content-section">
+            <h2><i class="fas fa-tools"></i> Outils & Environnements</h2>
+            <div class="tools-grid">
+                <span class="tool-tag">Kali/Debian Linux</span>
+                <span class="tool-tag">MikroTik RouterOS</span>
+                <span class="tool-tag">Wireshark</span>
+                <span class="tool-tag">GDB</span>
+                <span class="tool-tag">Scapy</span>
+                <span class="tool-tag">Arduino IDE</span>
+                <span class="tool-tag">VS Code</span>
+                <span class="tool-tag">Git</span>
+                <span class="tool-tag">TryHackMe</span>
+                <span class="tool-tag">Pwn College</span>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2><i class="fas fa-envelope"></i> Contact</h2>
+            <p>Prêt à discuter ? Contactez-moi via mes réseaux.</p>
+            <div class="social-links">
+                <a href="mailto:votre.email@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/votre-profil" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/votre-profil" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Seydina Oumar Keita. Tous droits réservés.</p>
+    </footer>
+
+    <button id="scrollToTopBtn" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script src="script.js"></script>
 </body>
 </html>
